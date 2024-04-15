@@ -1,0 +1,59 @@
+/* pages/my/my.wxss */
+
+.myCenter{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom,#62A1FE 10%,#FFFFFF,#f1f1f1);
+}
+.myCenter-wrap{
+  width: 100%;
+  padding: 32rpx;
+}
+.myCenter-head{
+  width: 100%;
+}
+.myCenter-info{
+  width: 100%;
+}
+.myCenter-avatar{
+  margin-bottom: 32rpx;
+}
+.myCenter-nickName{
+  margin-bottom: 16rpx;
+}
+.myCenter-item{
+  margin-right: 32rpx;
+}
+.myCenter-item:last-child{
+  margin-right: 0;
+}
+.myCenter-faim,
+.myCenter-faim .van-image{
+  width: 100%;
+  height: 100rpx;
+  mix-blend-mode: screen;
+  display: block;
+}
+.myCenter-cont{
+  width: 100%;
+}
+.myCenter-ui{
+  width: 100%;
+  padding: 0 32rpx;
+  background: #FFFFFF;
+  border-radius: 0 0 16rpx 16rpx;
+  box-shadow: 0 0 40rpx rgba(0,0,0,.2);
+}
+.myCenter-li{
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+.myCenter-li:last-child{
+  border-bottom: 0;
+}
+.myCenter-li-name{
+  font-size: 32rpx;
+  color: #333333;
+  margin-left: 16rpx;
+}

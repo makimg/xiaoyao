@@ -1,0 +1,27 @@
+
+
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="scroll-fullpage">
+  <view class="fullpage">
+    <van-tabs active="{{active}}" bind:change="onChangeTab" sticky animated swipeable color="#62A1FE">
+      <block wx:for="{{wallpaperLabel}}" wx:key="ename">
+        <van-tab title="{{item.name}}">
+          <view class="image_ul flex-wrap-start" wx:if="{{wallpaperList.length>0}}" data-skeleton-list>
+            <block wx:for="{{wallpaperList}}" wx:key="id">
+              <view class="image_li">
+                <van-image id="image_{{index}}" class="image_item flex-row-center-center" 
+                  lazy-load fit="{{item.objectFit}}" webp="{{true}}" src="{{item.colundImgUrl}}" 
+                  data-id="{{item.id}}" data-index="{{index}}" radius="{{8}}">
+                  <text slot="error">图片走丢了~</text>
+                </van-image>
+              </view>
+            </block>
+          </view>
+          <view class="image_no flex-row-center-center" wx:else>
+            <van-empty class="custom-image" image="https://7369-silents-0g9acbkb68a4da06-1259633115.tcb.qcloud.la/icon/%E6%9A%82%E6%97%A0%E5%86%85%E5%AE%B9.png?sign=8e74b506562c74082cfd86c60d14a0dd&t=1708333927" description="暂无内容" />
+          </view>
+        </van-tab>
+      </block>
+    </van-tabs>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">布局</view></cu-custom>
+<view class="myCenter">
+  <!-- <custom-nav-bar title="{{userInfo.nickName}}" left-arrow="{{false}}" is-need-custom-bg="{{true}}" custom-style="{{customStyle}}"></custom-nav-bar> -->
+  <view class="myCenter-wrap">
+    <view class="myCenter-head">
+        <view class="flex-column-start-center">
+          <van-image class="myCenter-avatar" width="60" height="60" round src="https://7369-silents-0g9acbkb68a4da06-1259633115.tcb.qcloud.la/self/07b77629f118c0b5e8158476fd08c50.jpg?sign=079b474557b4548b9c298fa2a88330c0&t=1708310790" />
+          <view class="myCenter-nickName">{{userInfo.nickName}}</view>
+          <view class="myCenter-info flex-row-center-center">
+            <view class="myCenter-item level">等级:{{userInfo.levelNums}}</view>
+            <view class="myCenter-item level">已收藏:{{userInfo.levelNums}}</view>
+          </view>
+        </view>
+    </view>
+    <van-image class="myCenter-faim" src="/static/images/wave.gif" />
+    <view class="myCenter-cont">
+      <view class="myCenter-ui">
+        <block wx:for="{{ulList}}" wx:key="index">
+          <view catchtap="itemClick" data-cli-index="{{index}}" class="myCenter-li flex-row-start-center">
+            <van-icon size="20px" color="{{item.color}}" name="{{item.icon}}" />
+            <view class="myCenter-li-name flex1">{{item.name}}</view>
+            <van-icon name="arrow" color="#999999" />
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

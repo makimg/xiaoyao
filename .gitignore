@@ -1,0 +1,4 @@
+/node_modules/
+/cloudfunctions/quickstartFunctions/node_modules/
+node_modules
+/miniprogram/

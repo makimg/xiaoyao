@@ -1,0 +1,40 @@
+
+
+<view class="page">
+  <view class="head">
+    <swiper class="head-swiper">
+      <block wx:for="{{swiperUl}}" wx:key="id">
+        <swiper-item class="head-swiper-items">
+          <view class="swiper-items-box">
+            <van-image class="swiper-items-img" src="{{item.imgUrl}}" />
+            <view class="swiper-items-name">{{item.name}}</view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+     <view class="head-notice">
+      <van-notice-bar color="#1989fa" background="#ecf9ff" left-icon="volume-o" scrollable text="{{noticeValue}}" />
+     </view>
+  </view>
+  <view class="body">
+    <van-tabs active="{{tabActive}}" color="#62A1FE" title-active-color="#62A1FE" 
+        bind:change="onChange" sticky="{{true}}" ellipsis="{{false}}">
+      <block wx:for="{{categoryList}}" wx:key="cid">
+        <van-tab title="{{item.title}}">
+          <view class="body-cont van-safe">
+            <view class="body-pic flex-wrap-start">
+              <block wx:for="{{categoryList[tabActive].list}}" wx:key="sid">
+                <view class="pic-item">
+                  <image class="pic-image" src="{{item.pic}}" mode="scaleToFill"></image>
+                </view>
+              </block>
+            </view>
+          </view>
+        </van-tab>
+      </block>
+    </van-tabs>
+  </view>
+  <view class="flooter">
+    
+  </view>
+</view>

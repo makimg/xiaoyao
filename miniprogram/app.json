@@ -1,0 +1,69 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/coupleMetting/coupleMetting",
+		"pages/my/my"
+	],
+	"subPackages": [
+		{
+			"root": "pages/moreCode",
+			"pages": [
+				"chantGpt/index",
+				"chantGpt/list"
+			]
+		},
+		{
+			"root": "pages/publics",
+			"pages": [
+				"login/index",
+				"hotlist/index",
+				"everyDayListen/index",
+				"lyric/index",
+				"changya/index",
+				"acrostic/index",
+				"fanyi/index",
+				"wallpaper/index",
+				"wallpaper/list",
+				"wallpaper/detail",
+				"everyDayText/list",
+				"everyDayText/detail"
+			]
+		}
+	],
+	"usingComponents": {
+		"van-button": "@vant/weapp/button/index",
+		"van-icon": "@vant/weapp/icon/index",
+		"van-image": "@vant/weapp/image/index",
+		"custom-nav-bar": "./components/custom-nav-bar/index"
+	},
+	"window": {
+		"navigationBarBackgroundColor": "#62A1FE",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "默垂眸",
+		"backgroundColor": "#62A1FE",
+		"backgroundTextStyle": "light",
+		"visualEffectInBackground": "hidden"
+	},
+	"tabBar": {
+		"custom": true,
+		"color": "#000000",
+		"selectedColor": "#000000",
+		"backgroundColor": "#000000",
+		"list": [
+			{
+				"pagePath": "pages/index/index"
+			},
+			{
+				"pagePath": "pages/coupleMetting/coupleMetting"
+			},
+			{
+				"pagePath": "pages/my/my"
+			}
+		]
+	},
+	"sitemapLocation": "sitemap.json",
+	"lazyCodeLoading": "requiredComponents",
+	"miniApp": {
+		"useAuthorizePage": true
+	}
+}

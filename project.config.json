@@ -1,0 +1,130 @@
+{
+    "miniprogramRoot": "miniprogram/",
+    "cloudfunctionRoot": "cloudfunctions/",
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "enhance": true,
+        "postcss": true,
+        "preloadBackgroundData": false,
+        "minified": true,
+        "newFeature": true,
+        "coverView": true,
+        "nodeModules": false,
+        "autoAudits": false,
+        "showShadowRootInWxmlPanel": true,
+        "scopeDataCheck": false,
+        "uglifyFileName": false,
+        "checkInvalidKey": true,
+        "checkSiteMap": true,
+        "uploadWithSourceMap": true,
+        "compileHotReLoad": false,
+        "useMultiFrameRuntime": true,
+        "useApiHook": true,
+        "useApiHostProcess": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "enableEngineNative": false,
+        "useIsolateContext": true,
+        "useCompilerModule": true,
+        "userConfirmedUseCompilerModuleSwitch": false,
+        "userConfirmedBundleSwitch": false,
+        "packNpmManually": true,
+        "packNpmRelationList": [
+            {
+                "packageJsonPath": "./package.json",
+                "miniprogramNpmDistDir": "./miniprogram/"
+            }
+        ],
+        "useCompilerPlugins": [
+            "typescript",
+            "sass"
+        ],
+        "minifyWXSS": true,
+        "condition": true
+    },
+    "appid": "wx99384deb7b0a80e9",
+    "projectname": "quickstart-wx-cloud",
+    "libVersion": "2.20.1",
+    "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+    "condition": {
+        "search": {
+            "list": []
+        },
+        "conversation": {
+            "list": []
+        },
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "id": -1,
+                    "name": "db guide",
+                    "pathName": "pages/databaseGuide/databaseGuide"
+                }
+            ]
+        }
+    },
+    "srcMiniprogramRoot": "miniprogram/",
+    "compileType": "miniprogram",
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "editorSetting": {
+        "tabIndent": "auto",
+        "tabSize": 4
+    },
+    "skeleton-config": {
+        "global": {
+            "loading": "chiaroscuro",
+            "outline": {
+                "remain": false,
+                "replace": "none"
+            },
+            "text": {
+                "color": "#EEEEEE"
+            },
+            "image": {
+                "shape": "",
+                "color": "#EFEFEF",
+                "shapeOpposite": []
+            },
+            "button": {
+                "color": "#EFEFEF",
+                "excludes": []
+            },
+            "pseudo": {
+                "color": "#EFEFEF",
+                "shape": "circle",
+                "shapeOpposite": []
+            },
+            "excludes": [],
+            "remove": [],
+            "empty": [],
+            "hide": [],
+            "grayBlock": [],
+            "showNative": false,
+            "backgroundColor": "transparent",
+            "mode": "fullscreen",
+            "templateName": "skeleton",
+            "cssUnit": "rpx",
+            "decimal": 4
+        },
+        "pages": {
+            "index/index": {}
+        }
+    },
+    "projectArchitecture": "multiPlatform",
+    "simulatorPluginLibVersion": {
+        "wxext14566970e7e9f62": "3.0.2-8"
+    }
+}

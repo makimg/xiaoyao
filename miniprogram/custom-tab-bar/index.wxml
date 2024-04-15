@@ -1,0 +1,15 @@
+<view class="custom-tabbar" id="customTab">
+  <van-tabbar 
+    class="canTabItem"
+    active="{{selected}}"
+    active-color="#62A1FE"
+    inactive-color="#9295A0"
+    border="{{false}}"
+    bind:change="onChange">
+    <block wx:for="{{vanTabbar}}" wx:key="text">
+      <van-tabbar-item>
+        <van-icon slot="{{selected===index?'icon-active':'icon'}}" name="{{selected===index?item.icon: item.icon+'-o'}}" size="24px" color="{{selected===index?'#62A1FE':'#A5AEBB'}}" />
+      </van-tabbar-item>
+    </block>
+  </van-tabbar>
+</view>

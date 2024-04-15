@@ -1,0 +1,32 @@
+.scroll-fullpage {
+  width: 100%;
+  .fullpage {
+    width: 100%;
+    .image_ul {
+      width: 100%;
+      padding: 30rpx;
+      .image_li {
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 20rpx;
+        &:nth-of-type(2n){
+          margin-right: 0;
+        }
+        .image_item{
+          width: 100%;
+          height: 100%;
+        }
+        .image_item .van-image{
+          width: 100%;
+        }
+      }
+    }
+    .image_no{
+      width: 100%;
+      min-height: 80vh;
+      .van-empty__description{
+        color: #bfbfbf;
+      }
+    }
+  }
+}
